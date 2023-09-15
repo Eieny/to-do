@@ -1,0 +1,87 @@
+.item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.item:focus-visible {
+  outline: 3px solid var(--focus-border-color);
+  transition: none;
+}
+
+.item {
+  border-bottom: 1px solid var(--divide-color);
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  padding: 14px 56px 14px 16px;
+}
+
+.content:hover {
+  background-color: var(--list-item-hover-color);
+}
+
+.completed {
+  color: var(--list-item-selected-color);
+  text-decoration: line-through;
+}
+
+.item input,
+label,
+button {
+  cursor: pointer;
+}
+
+.item input {
+  display: none;
+}
+
+.checkbox:before {
+  content: '';
+  display: block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 3px var(--shadow-color);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Неактивный чекбокс */
+.item input:not(:checked) ~ .checkbox::before {
+  background-color: var(--check-box-color);
+}
+
+/* Активный чекбокс (также отображается при ховере на весь элемент таски) */
+.item input:checked ~ .checkbox::before,
+.item div:hover input:not(:checked) ~ .checkbox::before {
+  content: url('../../assets/check.svg');
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+}
+
+.item button {
+  padding: 8px;
+  margin-right: 8px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.item button:focus-visible {
+  outline: 3px solid var(--focus-border-color);
+  transition: none;
+}
+
+.item button:hover {
+  border-radius: 50%;
+  background-color: var(--list-item-hover-color);
+}
