@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #e5e5e5;
+  --secondary-color: #4d7cff;
+
+  --input-color: #fafafa;
+  --check-box-color: #f5f5f5;
+  --divide-color: #ccc;
+  --placeholder-color: #4d4d4d;
+  --list-item-hover-color: rgba(0, 0, 0, 0.03);
+  --list-item-selected-color: #757575;
+  --tab-hover-color: rgba(0, 0, 0, 0.03);
+  --header-color: #e5e5e5;
+  --background-color: #282c34;
+  --fallback-color: #757575;
+
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --focus-border-color: #4d7cffb5;
+}
