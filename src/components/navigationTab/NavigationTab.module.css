@@ -1,0 +1,22 @@
+.tab {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 4px 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab:focus-visible {
+  outline: 3px solid var(--focus-border-color);
+  transition: none;
+}
+
+/* Ховер для невыбранной вкладки */
+.tab:not(.tab_selected):hover {
+  background-color: var(--tab-hover-color);
+}
+
+.tab_selected {
+  background-color: var(--secondary-color);
+  color: var(--check-box-color);
+}
