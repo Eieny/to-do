@@ -11,5 +11,6 @@
 ### Требования к коду
 - Приложение создано с использованием TypeScript, React, ReactHooks;
 - Ключевая функциональность покрыта тестами;
+- Все данные хранятся в Redux store;
 - Проект запускается командой `npm i && npm run start`;
 - Проект доступен на [GitHub Pages](https://eieny.github.io/to-do/).
