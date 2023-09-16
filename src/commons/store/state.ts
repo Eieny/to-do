@@ -4,7 +4,7 @@ export interface Todo {
   isCompleted: boolean;
 }
 
-interface AppState {
+export interface AppState {
   todos: Todo[];
   todosLeft: number;
 }
