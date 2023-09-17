@@ -13,8 +13,8 @@ type Props = {
  * Вкладка.
  */
 const NavigationTab = (props: Props) => {
-  const { children, value, onClick, isSelected } = props;
-  
+  const { children, value, onClick, isSelected = true } = props;
+
   const handleClick = () => {
     if (!onClick) return;
     onClick(value);
