@@ -4,7 +4,7 @@ import declensionCountable from 'commons/l10n/declension';
 import { selectLeftCount } from 'commons/store/selectors';
 import useQuery from 'commons/utils/useQuery';
 import { removeCompleted as removeCompletedAction } from 'commons/store/reducers';
-import NavigationTab from 'components/navigationTab/NavigationTab';
+import NavigationTab from 'components/navigation-tab/NavigationTab';
 import css from './NavigationBar.module.css';
 
 type TabItem = { label: string; index: number | string };

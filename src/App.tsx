@@ -4,10 +4,10 @@ import { selectTodos } from 'commons/store/selectors';
 import { add as addAction } from 'commons/store/reducers';
 import { Todo } from 'commons/store/state';
 import useQuery from 'commons/utils/useQuery';
-import TasksList from 'components/tasksList/TasksList';
-import NavigationBar from 'components/navigationBar/NavigationBar';
-import TabPanel from 'components/tabPanel/TabPanel';
-import EntryField from 'components/entryField/EntryField';
+import TasksList from 'components/tasks-list/TasksList';
+import NavigationBar from 'components/navigation-bar/NavigationBar';
+import TabPanel from 'components/tab-panel/TabPanel';
+import EntryField from 'components/entry-field/EntryField';
 import 'App.css';
 
 export enum PanelIndex {
